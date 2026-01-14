@@ -67,22 +67,9 @@
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu"
-            class="fixed inset-0 z-[60] bg-white/95 dark:bg-dark/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 md:hidden flex justify-center items-center">
-            <button class="absolute top-6 right-6 text-3xl text-black dark:text-white focus:outline-none"
-                onclick="toggleMenu()">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div
-                class="flex flex-col space-y-8 text-center text-3xl font-black text-gray-900 dark:text-white tracking-tight">
-                <a href="index.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">HOME</a>
-                <a href="about.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">ABOUT</a>
-                <a href="projects.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">PROJECTS</a>
-                <a href="experience.html" onclick="toggleMenu()"
-                    class="hover:text-primary transition-colors">EXPERIENCE</a>
-                <a href="contact.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">CONTACT</a>
-            </div>
-        </div>
+        <!-- Mobile Menu Overlay -->
+        <!-- Mobile Menu Overlay -->
+
     </nav>
 
     <!-- Content -->
@@ -104,7 +91,8 @@
 
             <p
                 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed mb-10 opacity-0 hero-el font-light">
-                I am <span class="text-black dark:text-white font-bold">Ajay</span>, a MEAN Stack Developer transforming
+                I am <span class="text-black dark:text-white font-bold">Ajay Selvamari</span>, a MEAN Stack Developer
+                transforming
                 complex
                 requirements into scalable, high-performance web applications.
             </p>
@@ -128,11 +116,28 @@
                 <div class="text-xs text-gray-500 dark:text-gray-400 tracking-widest mt-1">YEARS EXP</div>
             </div>
             <div>
-                <div class="text-4xl font-bold text-gray-900 dark:text-white">20+</div>
+                <div class="text-4xl font-bold text-gray-900 dark:text-white">15+</div>
                 <div class="text-xs text-gray-500 dark:text-gray-400 tracking-widest mt-1">PROJECTS</div>
             </div>
         </div>
     </main>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[100] bg-white dark:bg-dark transform translate-x-full transition-transform duration-300 md:hidden flex justify-center items-center">
+        <button class="absolute top-6 right-6 text-3xl text-black dark:text-white focus:outline-none"
+            onclick="toggleMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div
+            class="flex flex-col space-y-8 text-center text-3xl font-black text-gray-900 dark:text-white tracking-tight">
+            <a href="index.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">HOME</a>
+            <a href="about.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">ABOUT</a>
+            <a href="projects.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">PROJECTS</a>
+            <a href="experience.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">EXPERIENCE</a>
+            <a href="contact.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">CONTACT</a>
+        </div>
+    </div>
 
     <script src="js/theme.js"></script>
     <script>
