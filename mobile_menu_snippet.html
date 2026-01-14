@@ -1,0 +1,15 @@
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu"
+    class="fixed inset-0 z-[100] bg-white dark:bg-dark transform translate-x-full transition-transform duration-300 md:hidden flex justify-center items-center">
+    <button class="absolute top-6 right-6 text-3xl text-black dark:text-white focus:outline-none"
+        onclick="toggleMenu()">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="flex flex-col space-y-8 text-center text-3xl font-black text-gray-900 dark:text-white tracking-tight">
+        <a href="index.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">HOME</a>
+        <a href="about.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">ABOUT</a>
+        <a href="projects.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">PROJECTS</a>
+        <a href="experience.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">EXPERIENCE</a>
+        <a href="contact.html" onclick="toggleMenu()" class="hover:text-primary transition-colors">CONTACT</a>
+    </div>
+</div>
