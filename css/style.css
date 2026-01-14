@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+    background-color: #030712;
+    /* Gray 950 */
+    color: #f9fafb;
+    /* Gray 50 */
+    overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+}
+
+/* Utilities */
+.glass {
+    background: rgba(17, 24, 39, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #6366f1, #d946ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    opacity: 0.4;
+    z-index: -1;
+    animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    33% {
+        transform: translate(30px, -50px);
+    }
+
+    66% {
+        transform: translate(-20px, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Page Transitions */
+.page-transition {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

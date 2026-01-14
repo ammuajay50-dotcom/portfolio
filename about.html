@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Ajay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], mono: ['Space Grotesk', 'monospace'] },
+                    colors: {
+                        dark: '#030712',
+                        card: '#111827',
+                        primary: '#6366f1',
+                        accent: '#d946ef',
+                        light: '#f9fafb',
+                        'light-card': '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="antialiased selection:bg-primary selection:text-white bg-light text-gray-900 dark:bg-dark dark:text-white transition-colors duration-300">
+
+    <nav
+        class="fixed top-0 w-full z-50 py-6 px-6 md:px-12 flex justify-between items-center bg-white/80 dark:bg-dark/80 backdrop-blur-md border-b border-black/5 dark:border-white/5 transition-colors duration-300">
+        <a href="index.html" class="text-2xl font-bold tracking-tighter mono">AJAY<span
+                class="text-primary">.DEV</span></a>
+        <div
+            class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide text-gray-600 dark:text-gray-400">
+            <a href="index.html" class="hover:text-black dark:hover:text-white transition-colors">HOME</a>
+            <a href="about.html" class="text-black dark:text-white">ABOUT</a>
+            <a href="projects.html" class="hover:text-black dark:hover:text-white transition-colors">PROJECTS</a>
+            <a href="experience.html" class="hover:text-black dark:hover:text-white transition-colors">EXPERIENCE</a>
+            <a href="contact.html" class="hover:text-black dark:hover:text-white transition-colors">CONTACT</a>
+
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="text-xl hover:text-primary transition-colors focus:outline-none">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+        <a href="/assets/resume.pdf"
+            class="hidden md:block px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-all rounded-full text-sm font-bold">RESUME</a>
+
+        <!-- Mobile Menu Button (Placeholder for better mobile nav later) -->
+        <div class="md:hidden flex items-center gap-4">
+            <button id="theme-toggle-mobile" class="text-xl hover:text-primary transition-colors focus:outline-none"
+                onclick="document.getElementById('theme-toggle').click()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <!-- Add mobile menu trigger here if needed -->
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6 md:px-20 max-w-7xl mx-auto page-transition">
+
+        <!-- Header -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-black mb-8">BEYOND THE <br> <span
+                        class="gradient-text">CODE.</span></h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                    I am a passionate Systems Engineer & Developer with over 5 years of hands-on experience in the tech
+                    industry.
+                    My journey spans across building heavy-duty banking applications to dynamic e-commerce platforms.
+                </p>
+                <p class="text-lg text-gray-500 leading-relaxed mb-8">
+                    Currently pursuing my MCA in Generative AI, I am constantly evolving my stack to include the latest
+                    advancements in Artificial Intelligence
+                    to build smarter, more efficient software solutions.
+                </p>
+
+                <div class="flex gap-4">
+                    <a href="https://github.com" target="_blank"
+                        class="w-12 h-12 rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center hover:bg-black/10 dark:hover:bg-white/20 transition-all"><i
+                            class="fa-brands fa-github text-xl"></i></a>
+                    <a href="https://linkedin.com" target="_blank"
+                        class="w-12 h-12 rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center hover:bg-black/10 dark:hover:bg-white/20 transition-all"><i
+                            class="fa-brands fa-linkedin-in text-xl"></i></a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary to-accent opacity-20 blur-3xl rounded-full">
+                </div>
+                <div
+                    class="glass p-8 rounded-2xl relative z-10 bg-white/50 dark:bg-white/5 border border-white/20 dark:border-white/10 shadow-lg dark:shadow-none backdrop-blur-md">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><i
+                            class="fa-solid fa-graduation-cap text-primary"></i> Education</h3>
+
+                    <div class="space-y-8">
+                        <div>
+                            <div class="text-primary font-mono text-xs mb-1">2025 - Present</div>
+                            <h4 class="text-xl font-bold">MCA – Generative AI</h4>
+                            <div class="text-gray-600 dark:text-gray-400">SRM University</div>
+                            <div class="mt-2 text-sm text-gray-500">Specializing in AI models and LLM integration.</div>
+                        </div>
+                        <div class="border-t border-gray-200 dark:border-gray-800 pt-6">
+                            <div class="text-gray-500 font-mono text-xs mb-1">2016 - 2019</div>
+                            <h4 class="text-xl font-bold">B.Sc. Information Technology</h4>
+                            <div class="text-gray-600 dark:text-gray-400">Manonmaniam Sundaranar University</div>
+                            <div class="mt-2 text-sm text-gray-500">Foundation in multiple programming paradigms.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                <span class="w-12 h-1 bg-primary rounded-full"></span> Technical Arsenal
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Frontend -->
+                <div
+                    class="glass p-6 rounded-xl hover:border-primary/50 transition-all group bg-white/50 dark:bg-transparent border border-gray-200 dark:border-white/10 shadow-md dark:shadow-none">
+                    <div
+                        class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-angular text-2xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Frontend</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+                        <li>Angular (Expert)</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>RxJS & NgRx</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Backend -->
+                <div
+                    class="glass p-6 rounded-xl hover:border-primary/50 transition-all group bg-white/50 dark:bg-transparent border border-gray-200 dark:border-white/10 shadow-md dark:shadow-none">
+                    <div
+                        class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-node text-2xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Backend</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>NestJS & Prisma</li>
+                        <li>REST API Design</li>
+                        <li>Microservices</li>
+                    </ul>
+                </div>
+
+                <!-- Database -->
+                <div
+                    class="glass p-6 rounded-xl hover:border-primary/50 transition-all group bg-white/50 dark:bg-transparent border border-gray-200 dark:border-white/10 shadow-md dark:shadow-none">
+                    <div
+                        class="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-database text-2xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Data</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+                        <li>MongoDB (Aggregation)</li>
+                        <li>PostgreSQL</li>
+                        <li>Schema Design</li>
+                        <li>Performance Tuning</li>
+                    </ul>
+                </div>
+
+                <!-- Tools -->
+                <div
+                    class="glass p-6 rounded-xl hover:border-primary/50 transition-all group bg-white/50 dark:bg-transparent border border-gray-200 dark:border-white/10 shadow-md dark:shadow-none">
+                    <div
+                        class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-code-branch text-2xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Tools</h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+                        <li>Git & Azure Repos</li>
+                        <li>Docker</li>
+                        <li>Agile / Scrum</li>
+                        <li>AI Tools (Copilot)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        gsap.from("h1, p, .glass", { y: 30, opacity: 0, duration: 1, stagger: 0.1, ease: "power3.out" });
+    </script>
+</body>
+
+</html>
